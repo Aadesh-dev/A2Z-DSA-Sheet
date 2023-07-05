@@ -56,7 +56,7 @@ class Solution {
     }
 }
 
-Time: O(s), Space: O(1)
+//Time: O(s), Space: O(1)
 
 //My approach improved:
 
@@ -84,4 +84,19 @@ class Solution
     }
 }
 
-Time: O(s), Space: O(1)
+//Time: O(s), Space: O(1)
+
+//Smarter
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+        int m1[] = new int[256], m2[] = new int[256], n = s.length();
+        for (int i = 0; i < n; ++i) {
+            if (m1[s.charAt(i)] != m2[t.charAt(i)]) return false;
+            m1[s.charAt(i)] = i + 1;
+            m2[t.charAt(i)] = i + 1;
+        }
+        return true;
+    }
+}
+
+//Time: O(s), Space: O(1)

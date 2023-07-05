@@ -102,3 +102,9 @@ class Solution {
 }
 
 //Time: O(s), Space: O(1)
+
+// i is not incremented on line 96 because of below test case.
+// s =
+// "vcuszhlbtpmksjleuchmjffufrwpiddgyynfujnqblngzoogzg"
+// goal =
+// "fufrwpiddgyynfujnqblngzoogzgvcuszhlbtpmksjleuchmjf"
