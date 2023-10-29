@@ -18,6 +18,7 @@ public class Solution {
     }
 }
 //Time: O(N + 2^N) => O(2^N), Space: O(2^N)
+//https://www.geeksforgeeks.org/generate-binary-strings-without-consecutive-1s/
 
 //Dry run:
 //When n = 3:
